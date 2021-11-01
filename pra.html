@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jspractice</title>
+  </head>
+  <body>
+    <p id="1"></p>
+    <script>
+      var a="pogaru ekkina simham ekkina";
+      //string methods
+      document.getElementById("1").innerHTML=a.length + a.slice(6,13) + a.substring(13,20) +" "+ a.substr(0,6) +" "+
+       a.replace("pogaru","mabbekina")+ " " + a.toUpperCase() +" "+ a.toLowerCase() +" "+ a.concat("lanti mogadu kavale")+" "+
+       a.split(" ")+"<br>"+ a.indexOf("ekkina") +" "+ a.lastIndexOf("ekkina") +" "+ a.endsWith("ekkina");
+    </script>
+  </body>
+</html>

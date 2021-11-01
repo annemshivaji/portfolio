@@ -1,0 +1,9 @@
+button.styled{background-color: #922b21 ;
+  font-family:Garuda;color:white;
+  border-color:#f44336;border-radius: 8px;
+  height:80px;width:220px;
+  text-align: center;
+  font-size: 35px;}
+button.styled:hover{
+  background-color: rgba(255, 0, 0, 0.58);
+}

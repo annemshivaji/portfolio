@@ -1,0 +1,103 @@
+<html>
+<head>
+	<!DOCTYPE html>
+	<html lang="en" dir="ltr">
+	    <head>
+	    <meta charset="utf-8">
+	    <title>LOGIN</title>
+	    <!-- ////////// -->
+	    <style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333333;
+	  }
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	  font-size:40px;
+	  font-family:Times New Roman;
+	}
+
+	li a:hover {
+	  background-color: #111111;
+	}
+	</style>
+	   <!-- /////////// -->
+	    <style>
+	     .p{text-align:center;}
+	     .pre{text-align:center;}
+	     .img{text-align:center;}
+	     .h1{text-align: center;}
+	    </style>
+	    <!--class-->
+	    <!-- <link rel="stylesheet" href="/home/shivaji/WORK/CODING/CODES/full stack dev python/html/css1.css"> -->
+	<style>
+	    button.styled{background-color: #922b21 ;
+	      font-family:Garuda;color:white;
+	      border-color:#f44336;border-radius: 8px;
+	      height:80px;width:220px;
+	      text-align: center;
+	      font-size: 35px;}
+	    button.styled:hover{
+	      background-color: rgba(255, 0, 0, 0.58);
+	    }
+	    .ew{color:white;text-decoration: none;}
+	    .ew:hover{filter: drop-shadow(10px 10px 10px #818589);}
+	</style>
+	    <!--class-->
+
+</head>
+<body>
+<form name="loginForm" method="post" action="login.php">
+<table width="400px" height="100px" bgcolor="#E5E4E2" align="center">
+
+<tr>
+<td colspan=2><center><h1 style="color:#922b21;font-family:times new roman;font-size:34px" class="h1">Login</h1></center></td>
+</tr>
+<center>
+<tr>
+<td style="font-size:24px"> Username:</td>
+<td><input type="text" size=30 name="userid"></td>
+</tr>
+
+<tr>
+<td style="font-size:24px"> Password:</td>
+<td><input type="Password" size=30 name="pwd"></td>
+</tr>
+
+<tr><br><br>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr></center><br><br>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
